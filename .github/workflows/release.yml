@@ -1,41 +1,27 @@
-name: Release
+name: Publish Packages
 on:
-  push:
-    # Sequence of patterns matched against refs/heads
-    branches:
-      # Push events on master branch
-      - main
+  release:
+    types: [published, created, edited]
+
 jobs:
-  publish_action:
+  release_npm:
     runs-on: ubuntu-latest
-    name: Publishing the Action
-    needs: test_project
+    name: Publish Package to NPM
+    timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v2.4.0
+      - name: Setup Node
+        uses: actions/setup-node@v2.5.1
         with:
-          node-version: 12
-      - name: Npm install
-        run: npm ci
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - name: Build
-        run: npm run ncc:build
-      - name: Create Data
+          node-version: 16
+      - name: Install Packages
         run: |
-          mkdir build2
-          cp -r ./dist build2/dist
-          cp action.yml build2/action.yml
-          cp README.md build2/README.md
-          cp LICENSE build2/LICENSE
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
-          BASE_BRANCH: master # The branch the action should deploy from.
-          BRANCH: dist # The branch the action should deploy to.
-          FOLDER: build2
+          npm ci
+      - name: Build Package
+        run: npm run build
+      - name: Prepare Package
+        run: |
+          npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_PUBLISH }}
+      - name: Upload Package
+        run: npm publish
