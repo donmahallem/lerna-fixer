@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ES6",
+        "outDir": "dist",
+        "rootDir": "./src",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "noUnusedLocals": true
+    },
+    "typeAcquisition": {
+        "enable": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "baseUrl": "./src",
+    "exclude": [
+        "node_modules",
+    ]
+}

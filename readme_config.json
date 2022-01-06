@@ -1,0 +1,37 @@
+{
+    "line": "water",
+    "badges": [
+        {
+            "alt": "Test",
+            "url": "https://github.com/donmahallem/lerna-fixer/actions?query=workflow%3ATest+branch%3Amain",
+            "img": "https://github.com/donmahallem/lerna-fixer/workflows/Test/badge.svg?branch=main&event=push"
+        },
+        {
+            "alt": "codecov",
+            "url": "https://codecov.io/gh/donmahallem/lerna-fixer/branch/main",
+            "img": "https://codecov.io/gh/donmahallem/lerna-fixer/branch/main/graph/badge.svg"
+        },
+        {
+            "alt": "GitHub license",
+            "url": "https://github.com/donmahallem/lerna-fixer/blob/main/LICENSE",
+            "img": "https://img.shields.io/github/license/donmahallem/lerna-fixer"
+        },
+        {
+            "alt": "David",
+            "url": "https://github.com/donmahallem/lerna-fixer",
+            "img": "https://img.shields.io/david/donmahallem/lerna-fixer"
+        },
+        {
+            "alt": "David",
+            "url": "https://github.com/donmahallem/lerna-fixer",
+            "img": "https://img.shields.io/david/dev/donmahallem/lerna-fixer"
+        },
+        {
+            "alt": "GitHub contributors",
+            "url": "https://github.com/donmahallem/lerna-fixer/graphs/contributors",
+            "img": "https://img.shields.io/github/contributors-anon/donmahallem/lerna-fixer"
+        }
+    ],
+    "lineBreak": "\n",
+    "silent": true
+}
