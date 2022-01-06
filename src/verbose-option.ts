@@ -6,7 +6,8 @@
 import { InvalidOptionArgumentError, Option } from 'commander';
 
 /**
- *
+ * Creates default verbose option
+ * Parses option 'verbose' als false by default
  */
 export function createVerboseOption(): Option {
     return new Option('-v, --verbose', 'If the output should be verbose')
