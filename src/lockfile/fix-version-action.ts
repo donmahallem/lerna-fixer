@@ -1,9 +1,14 @@
-import { Package } from "@lerna/package";
-import { Project } from "@lerna/project";
-import chalk from "chalk";
-import { Command } from "commander";
-import { promises as fsp } from "fs";
-import { resolve } from "path";
+/*
+ * Package @donmahallem/lerna-fixer
+ * Source https://donmahallem.github.io/lerna-fixer/
+ */
+
+import { Package } from '@lerna/package';
+import { Project } from '@lerna/project';
+import chalk from 'chalk';
+import { Command } from 'commander';
+import { promises as fsp } from 'fs';
+import { resolve } from 'path';
 import { writeJsonFile } from 'write-json-file';
 
 interface IPackage {
@@ -16,6 +21,12 @@ interface IPackageLock extends IPackage {
     packages?: { [key: string]: IPackage };
 }
 
+/**
+ * @param projectPath
+ * @param opts
+ * @param opts.verbose
+ * @param cmdInfo
+ */
 export async function fixVersionCommand(projectPath: string, opts: { verbose?: boolean }, cmdInfo: Command): Promise<void> {
     const verbose: boolean = opts?.verbose || false;
     const project: Project = new Project(projectPath);
@@ -38,21 +49,22 @@ export async function fixVersionCommand(projectPath: string, opts: { verbose?: b
             const packageLockPath: string = resolve(pkg.location, 'package-lock.json');
             const fileContent: string = await fsp.readFile(packageLockPath, 'utf-8');
             const parsedFileContent: IPackageLock = JSON.parse(fileContent) as IPackageLock;
-            if (parsedFileContent?.lockfileVersion === 2 &&
-                parsedFileContent?.packages?.[""] &&
-                parsedFileContent.packages[""]?.version !== pkg.version) {
-                parsedFileContent.packages[""].version = pkg.version;
-                console.log(`Package needs fixing!`)
+            if (
+                parsedFileContent?.lockfileVersion === 2 &&
+                parsedFileContent?.packages?.[''] &&
+                parsedFileContent.packages['']?.version !== pkg.version
+            ) {
+                parsedFileContent.packages[''].version = pkg.version;
+                console.log(`Package needs fixing!`);
                 await writeJsonFile(packageLockPath, parsedFileContent, {
                     detectIndent: true,
                     indent: 2,
                 });
             } else {
-                console.log(`Package doesn't need fixing!`)
+                console.log(`Package doesn't need fixing!`);
             }
         } catch (err: unknown) {
-
-
+            console.error('Error');
         }
         console.groupEnd();
     }

@@ -1,5 +1,13 @@
-import { InvalidOptionArgumentError, Option } from "commander";
+/*
+ * Package @donmahallem/lerna-fixer
+ * Source https://donmahallem.github.io/lerna-fixer/
+ */
 
+import { InvalidOptionArgumentError, Option } from 'commander';
+
+/**
+ *
+ */
 export function createVerboseOption(): Option {
     return new Option('-v, --verbose', 'If the output should be verbose')
         .default(false, 'verbose output is disabled')
@@ -19,7 +27,7 @@ export function createVerboseOption(): Option {
                 case '0':
                     return false;
                 default:
-                    throw new InvalidOptionArgumentError(`Invalid `)
+                    throw new InvalidOptionArgumentError(`Invalid `);
             }
         });
 }

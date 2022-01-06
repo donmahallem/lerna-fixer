@@ -1,8 +1,15 @@
-import { Command } from "commander";
-import { createVerboseOption } from "../verbose-option";
-import { fixVersionCommand } from "./fix-version-action";
+/*
+ * Package @donmahallem/lerna-fixer
+ * Source https://donmahallem.github.io/lerna-fixer/
+ */
 
+import { Command } from 'commander';
+import { createVerboseOption } from '../verbose-option';
+import { fixVersionCommand } from './fix-version-action';
 
+/**
+ *
+ */
 export function fixVersion(): Command {
     const cmd: Command = new Command('fixversion');
     cmd.argument('[path]', 'Path to the lerna root. Defaults to cwd', process.cwd())
