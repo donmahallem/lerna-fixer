@@ -28,22 +28,8 @@ jobs:
           name: Test
           fail_ci_if_error: false
           verbose: false
-  test_project_docker:
-    runs-on: ubuntu-latest
-    name: Docker Tests
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-      - name: Test Build
-        run: docker build . -t donmahallem/lerna-fixer
-      - name: Image Info
-        run: docker images donmahallem/lerna-fixer
   finish:
-    needs: [test_project, test_project_docker]
+    needs: [test_project]
     name: Finish Test
     runs-on: ubuntu-latest
     steps:
