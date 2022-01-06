@@ -26,7 +26,7 @@
     "docs": "typedoc --options typedoc.json",
     "version": "npm run build:readme && npm run build:changelog && git add README.md && git add CHANGELOG.md"
   },
-  "homepage": "https://donmahallem.github.io/lerna-fixer/",
+  "homepage": "https://github.com/donmahallem/lerna-fixer/",
   "author": {
     "name": "donmahallem",
     "email": "donmahallem@users.noreply.github.com",
