@@ -28,7 +28,7 @@ export function createVerboseOption(): Option {
                 case '0':
                     return false;
                 default:
-                    throw new InvalidOptionArgumentError(`Invalid `);
+                    throw new InvalidOptionArgumentError(`Invalid value '${val}' for option 'verbose'`);
             }
         });
 }
