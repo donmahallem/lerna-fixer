@@ -1,6 +1,6 @@
 /*
  * Package @donmahallem/lerna-fixer
- * Source https://donmahallem.github.io/lerna-fixer/
+ * Source https://github.com/donmahallem/lerna-fixer/
  */
 
 import { expect } from 'chai';
