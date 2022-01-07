@@ -14,7 +14,7 @@
     "access": "public"
   },
   "bin": {
-    "lerna-fixer": "./dist/index.js"
+    "lerna-fixer": "./dist/index.mjs"
   },
   "scripts": {
     "test": "mocha --config .mocharc.yml --experimental-specifier-resolution=node",
