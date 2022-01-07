@@ -3,4 +3,6 @@
  * Source https://github.com/donmahallem/lerna-fixer/
  */
 
-export { createCli } from './handle';
+import { createCli } from './handle';
+
+void createCli().parseAsync(process.argv);
