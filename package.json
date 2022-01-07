@@ -1,6 +1,6 @@
 {
   "name": "@donmahallem/lerna-fixer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CLI to fix issues with lerna as a workaround",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -14,7 +14,7 @@
     "access": "public"
   },
   "bin": {
-    "lerna-fixer": "./dist/index.mjs"
+    "lerna-fixer": "./cli.mjs"
   },
   "scripts": {
     "test": "mocha --config .mocharc.yml --experimental-specifier-resolution=node",
@@ -94,7 +94,8 @@
   },
   "files": [
     "dist/*",
-    "src/*"
+    "src/*",
+    "cli.js"
   ],
   "dependencies": {
     "@lerna/package": "~4.0.0",
