@@ -31,7 +31,7 @@
     "lint:fix": "eslint -c .eslintrc.cjs --ext .ts ./src --fix",
     "postlint:fix": "prettier --config .prettierrc src/**/*.ts src/*.ts --write",
     "docs": "typedoc --options typedoc.json",
-    "version": "npm run build:readme && npm run build:changelog && git add README.md && git add CHANGELOG.md"
+    "version": "npm run build && npm run build:readme"
   },
   "homepage": "https://github.com/donmahallem/lerna-fixer/",
   "author": {
