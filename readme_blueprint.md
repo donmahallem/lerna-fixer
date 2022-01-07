@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-npm install [[ ids.npm ]] -D
+npm install {{pkg.name}} -D
 ```
 
-If you don't want to install anything you can use the `npx [[ ids.npm ]] lockfile fixversion` command instead.
+If you don't want to install anything you can use the `npx {{pkg.name}} lockfile fixversion` command instead.
