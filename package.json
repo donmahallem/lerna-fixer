@@ -13,6 +13,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "bin": {
+    "lerna-fixer": "./dist/index.js"
+  },
   "scripts": {
     "test": "mocha --config .mocharc.yml --experimental-specifier-resolution=node",
     "test:coverage": "c8 --config .nycrc.json npm run test",
