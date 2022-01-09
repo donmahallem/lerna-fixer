@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/donmahallem/lerna-fixer/compare/v0.1.0...v0.1.1) (2022-01-09)
+
+
+### Bug Fixes
+
+* **semantic-release:** update provided CHANGELOG.md in source control ([#16](https://github.com/donmahallem/lerna-fixer/issues/16)) ([84c39ae](https://github.com/donmahallem/lerna-fixer/commit/84c39ae0429b054b99eeeb4fd08d48a39584349a))
+
 ## [0.0.5](https://github.com/donmahallem/lerna-fixer/compare/v0.0.4...v0.0.5) (2022-01-07)
 
 
@@ -25,6 +32,3 @@
 
 
 ## 0.0.1 (2022-01-06)
-
-
-
