@@ -76,6 +76,7 @@
     "@types/sinon": "10.0.6",
     "c8": "7.11.0",
     "chai": "4.3.4",
+    "colors": "1.4.0",
     "commitizen": "4.2.4",
     "conventional-changelog-cli": "2.2.2",
     "eslint": "8.6.0",
@@ -100,7 +101,7 @@
   "dependencies": {
     "@lerna/package": "~4.0.0",
     "@lerna/project": "~4.0.0",
-    "chalk": "^5.0.0",
+    "chalk": "~5.0.0",
     "commander": "~8.3.0",
     "write-json-file": "~5.0.0"
   }
