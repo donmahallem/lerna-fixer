@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/donmahallem/lerna-fixer/compare/v0.1.1...v0.1.2) (2022-01-10)
+
+
+### Bug Fixes
+
+* **README:** test status badge ([5971a7e](https://github.com/donmahallem/lerna-fixer/commit/5971a7edf0b02e69ce2928f9ab7476d70c125e15))
+
 ## [0.1.1](https://github.com/donmahallem/lerna-fixer/compare/v0.1.0...v0.1.1) (2022-01-09)
 
 
