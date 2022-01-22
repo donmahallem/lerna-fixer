@@ -64,7 +64,7 @@
   "devDependencies": {
     "@appnest/readme": "1.2.7",
     "@donmahallem/eslint-config": "1.0.8",
-    "@donmahallem/rollup-config": "1.0.5",
+    "@donmahallem/rollup-config": "1.0.6",
     "@rollup/plugin-commonjs": "21.0.1",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
@@ -84,7 +84,7 @@
     "mocha": "9.1.4",
     "nodemon": "2.0.15",
     "prettier": "2.5.1",
-    "rollup": "2.65.0",
+    "rollup": "2.66.0",
     "semantic-release": "19.0.2",
     "sinon": "12.0.1",
     "standard-version": "9.3.2",
