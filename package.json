@@ -1,6 +1,6 @@
 {
   "name": "@donmahallem/lerna-fixer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "CLI to fix issues with lerna as a workaround",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
