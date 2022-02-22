@@ -3,7 +3,7 @@
  * Source https://github.com/donmahallem/lerna-fixer/
  */
 
-import { InvalidOptionArgumentError, Option } from 'commander';
+import { InvalidArgumentError, Option } from 'commander';
 
 /**
  * Creates default verbose option
@@ -28,7 +28,7 @@ export function createVerboseOption(): Option {
                 case '0':
                     return false;
                 default:
-                    throw new InvalidOptionArgumentError(`Invalid value '${val}' for option 'verbose'`);
+                    throw new InvalidArgumentError(`Invalid value '${val}' for option 'verbose'`);
             }
         });
 }
