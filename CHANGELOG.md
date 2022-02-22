@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/donmahallem/lerna-fixer/compare/v0.1.4...v0.1.5) (2022-02-22)
+
+
+### Bug Fixes
+
+* change deprecated InvalidArgumentError ([#78](https://github.com/donmahallem/lerna-fixer/issues/78)) ([632098f](https://github.com/donmahallem/lerna-fixer/commit/632098fae300b7a5402045c251c7e70fab58e4b0))
+
 ## [0.1.4](https://github.com/donmahallem/lerna-fixer/compare/v0.1.3...v0.1.4) (2022-02-22)
 
 ## [0.1.3](https://github.com/donmahallem/lerna-fixer/compare/v0.1.2...v0.1.3) (2022-02-08)
