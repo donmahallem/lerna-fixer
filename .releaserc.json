@@ -8,7 +8,7 @@
                     {
                         "type": "chore",
                         "scope": "deps",
-                        "message": "lock file maintenance",
+                        "message": "lock file maintenance*",
                         "release": "patch"
                     }
                 ]
