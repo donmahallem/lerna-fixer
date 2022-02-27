@@ -1,7 +1,6 @@
 import defaultRollup from '@donmahallem/rollup-config';
 import shebang from '@donmahallem/rollup-plugin-shebang';
 import pkg from './package.json';
-import magicstring from 'magic-string';
 
 const d = defaultRollup(pkg, {
     output: {
