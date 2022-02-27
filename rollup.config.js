@@ -1,4 +1,5 @@
 import defaultRollup from '@donmahallem/rollup-config';
+import shebang from '@donmahallem/rollup-plugin-shebang';
 import pkg from './package.json';
 import magicstring from 'magic-string';
 
@@ -17,19 +18,5 @@ d.output[0].file = undefined;
 d.output[0].dir = './dist'
 d.output[0].entryFileNames = '[name].mjs'
 d.output[0].chunkFileNames = '[name]-[hash].mjs'
-d.plugins.push({
-    name: 'addShebang',
-    renderChunk(code, { fileName }, { dir, file, sourcemap }) {
-        const shebang = '#!/usr/bin/env node\n\n';
-        if (!fileName.endsWith('cli.mjs')) {
-            return;
-        }
-        const parsed = new magicstring(code);
-        parsed.prepend(shebang);
-        return {
-            code: parsed.toString(),
-            map: parsed.generateMap(),
-        };
-    }
-})
+d.plugins.push(shebang())
 export default d;
