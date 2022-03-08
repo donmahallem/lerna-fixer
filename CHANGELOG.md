@@ -1,3 +1,10 @@
+## [0.1.8](https://github.com/donmahallem/lerna-fixer/compare/v0.1.7...v0.1.8) (2022-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to ~5.0.1 ([cdb974f](https://github.com/donmahallem/lerna-fixer/commit/cdb974febea688bf93735510db0342ac4014519b))
+
 ## [0.1.7](https://github.com/donmahallem/lerna-fixer/compare/v0.1.6...v0.1.7) (2022-03-07)
 
 ## [0.1.6](https://github.com/donmahallem/lerna-fixer/compare/v0.1.5...v0.1.6) (2022-02-28)
