@@ -1,3 +1,5 @@
+## [0.1.12](https://github.com/donmahallem/lerna-fixer/compare/v0.1.11...v0.1.12) (2022-04-04)
+
 ## [0.1.11](https://github.com/donmahallem/lerna-fixer/compare/v0.1.10...v0.1.11) (2022-03-28)
 
 ## [0.1.10](https://github.com/donmahallem/lerna-fixer/compare/v0.1.9...v0.1.10) (2022-03-21)
