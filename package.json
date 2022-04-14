@@ -86,7 +86,7 @@
     "prettier": "2.6.2",
     "rollup": "2.70.1",
     "semantic-release": "19.0.2",
-    "sinon": "13.0.1",
+    "sinon": "13.0.2",
     "standard-version": "9.3.2",
     "tempy": "2.0.0",
     "ts-node": "10.7.0",
