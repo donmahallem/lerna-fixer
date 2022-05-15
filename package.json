@@ -87,7 +87,7 @@
     "rollup": "2.73.0",
     "semantic-release": "19.0.2",
     "sinon": "14.0.0",
-    "standard-version": "9.3.2",
+    "standard-version": "9.5.0",
     "tempy": "3.0.0",
     "ts-node": "10.7.0",
     "typedoc": "0.22.15",
