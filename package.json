@@ -99,8 +99,8 @@
     "cli.js"
   ],
   "dependencies": {
-    "@lerna/package": "~4.0.0",
-    "@lerna/project": "~4.0.0",
+    "@lerna/package": "~5.0.0",
+    "@lerna/project": "~5.0.0",
     "chalk": "~5.0.1",
     "commander": "~9.2.0",
     "write-json-file": "~5.0.0"
