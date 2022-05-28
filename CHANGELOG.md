@@ -1,3 +1,10 @@
+## [0.1.21](https://github.com/donmahallem/lerna-fixer/compare/v0.1.20...v0.1.21) (2022-05-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commander to ~9.3.0 ([a802ff9](https://github.com/donmahallem/lerna-fixer/commit/a802ff9a52cc743c495ab0cfbc4ffbe0166f4342))
+
 ## [0.1.20](https://github.com/donmahallem/lerna-fixer/compare/v0.1.19...v0.1.20) (2022-05-25)
 
 
