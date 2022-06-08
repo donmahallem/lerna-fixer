@@ -1,3 +1,10 @@
+## [0.1.24](https://github.com/donmahallem/lerna-fixer/compare/v0.1.23...v0.1.24) (2022-06-08)
+
+
+### Bug Fixes
+
+* **deps:** update lerna monorepo to ~5.1.0 ([a36e1c6](https://github.com/donmahallem/lerna-fixer/commit/a36e1c69f72da37778fdcd502f03c8e19f4ad0e0))
+
 ## [0.1.23](https://github.com/donmahallem/lerna-fixer/compare/v0.1.22...v0.1.23) (2022-06-06)
 
 ## [0.1.22](https://github.com/donmahallem/lerna-fixer/compare/v0.1.21...v0.1.22) (2022-05-30)
