@@ -1,3 +1,10 @@
+## [0.1.27](https://github.com/donmahallem/lerna-fixer/compare/v0.1.26...v0.1.27) (2022-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @lerna/project to ~5.1.2 ([995689b](https://github.com/donmahallem/lerna-fixer/commit/995689bf648b64db5b29d720e9b382426aec180d))
+
 ## [0.1.26](https://github.com/donmahallem/lerna-fixer/compare/v0.1.25...v0.1.26) (2022-06-13)
 
 ## [0.1.25](https://github.com/donmahallem/lerna-fixer/compare/v0.1.24...v0.1.25) (2022-06-09)
