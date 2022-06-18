@@ -80,7 +80,7 @@
     "colors": "1.4.0",
     "commitizen": "4.2.4",
     "conventional-changelog-cli": "2.2.2",
-    "eslint": "8.17.0",
+    "eslint": "8.18.0",
     "mocha": "10.0.0",
     "nodemon": "2.0.16",
     "prettier": "2.7.1",
